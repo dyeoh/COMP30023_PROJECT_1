@@ -11,31 +11,31 @@ in an executable named swap being created in the root directory of the project.
 ### Guide
 The program takes in four arguments which are needed for the program to run. The list of options are listed below:
 
-1.  Selecting an algorithm
+#### 1. Selecting an algorithm
 ```
 -a <first/best/worst>
 ```
   Used to select the algorithm used by the simulation.
 
-#### First Fit 
+##### First Fit 
 ```
 -a first
 ```
 
 First ﬁt: First ﬁt starts searching the free list from the beginning (highest address), and uses the ﬁrst hole large enough to satisfy the request. If the hole is larger than necessary, it is split, with the process occupying the higher address range portion of the hole and the remainder being put on the free list. 
 
-#### Best Fit 
+##### Best Fit 
 ```
 -a best
 ```
 Best ﬁt: Chooses the smallest hole from the free list that will satisfy the request. If multiple holes meet this criterion, choose the highest address one in the free list. If the hole is larger than necessary, it is split, with the process occupying the higher address range portion of the hole and the remainder being put on the free list. 
 
-#### Worst Fit
+##### Worst Fit
 -a worst
 
 Worst ﬁt: Chooses the largest hole from the free list that will satisfy the request. If multiple holes meet this criterion, choose the highest address one in the free list. If the hole is larger than necessary, it is split, with the process occupying the higher address range portion of the hole and the remainder being put on the free list.
 
-2. Reading Processes from a file
+#### 2. Reading Processes from a file
 ```
 -f <filename>
 ```
@@ -52,13 +52,13 @@ File content example:
 Where process 3 is created at time 0, is 85 MB in size, and needs 30 seconds running time to ﬁnish.
 ```
 
-3. Total memory of CPU
+#### 3. Total memory of CPU
 ```
 -m <total_mem>
 ```
 Used to set the total main memory allocated to the scheduler.
 
-4. Setting the quantum of a process used in Round Robin
+#### 4. Setting the quantum of a process used in Round Robin
 ```
 -q <quantum_time>
 ```
