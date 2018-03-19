@@ -1,8 +1,7 @@
 # COMP30023_PROJECT_1
-Memory Scheduling Simulation using a round robin algorithm. The simulator aims to simulate a CPU, taking processes
-of different sizes, loads them into memory when required, using one of three different algorithms (first fit,best fit, to swap out processes
-to create a sufficiently large space for the process to be loaded into memory. The processes that are currently in memory
-are handled using the round robin algorithm.
+A memory scheduling simulator using a round robin algorithm. The simulator aims to simulate a CPU, taking processes
+of different sizes, loads them into memory when required, using one of three different algorithms (first fit, best fit, worst fit) 
+to swap out processes to create a sufficiently large space for the process to be loaded into memory. The processes that are currently in memory are handled using the round robin algorithm.
 
 ## Getting Started
 A precompiled executable named swap is provided in the local directory of the project. If you
